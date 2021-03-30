@@ -8,11 +8,30 @@
 
 <html>
 	<head>
-
+		<title> Christmas Page </title>
+		<link rel='stylesheet' href="site.css">
 	</head>
 
 	<body>
-		<p style='text-align:center'> Days until Christmas </p>
+	<div>
+		<p id='days'> </p>
+		<p style='text-align:center;font-size:50px'> Days until Christmas! </p>
+	</div>
+
+	<script>
+		var christmas = new Date('12/25/2021');
+		console.log(christmas)
+		var today = new Date();
+		console.log(today)
+		var mtc = christmas.getTime() - today.getTime();
+		console.log(mtc)
+		var dtc = mtc / 86400000
+		console.log(dtc)
+		dtc = Math.round(dtc)
+		document.getElementById('days').innerHTML = dtc;
+	</script>
+	
 	</body>
+	</html>
 
 </html>

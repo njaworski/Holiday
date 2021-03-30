@@ -2,3 +2,18 @@
     Nathan Jaworski
     3/30/21
 */
+div{
+    position: relative;
+    top: 200px;
+}
+body{
+    background-image: url('chrback.jpeg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+}
+#days{ 
+    text-align: center;
+    font-size: 200px;
+    margin: 0;
+}
